@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<body>
+
+<!-- MODERN CENTERED HEADER -->
+<header class="site-header">
+
+    <div class="header-container">
+
+        <div class="logo">
+            <img src="images/icons8-graduation-cap-100.png" alt="logo">
+
+            <div class="logo-text">
+                <h1>UBUNTU YOUTH CLUB</h1>
+                <p class="subtitle">Access At Your Comfort</p>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"  class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="programmes.html">Programmes</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="container">
+
+    <!-- INTRO -->
+    <section class="center-text">
+
+        <h1>About Us</h1>
+
+        <p>
+            The Ubuntu Youth Club is a non-profit organisation created to bridge the digital skills gap
+            among young people. Many youth struggle when entering the workplace due to lack of technical
+            skills. Our programme introduces digital literacy, technical training, and industry-relevant
+            skills to prepare students for modern careers.
+        </p>
+
+        <p>
+            We offer accredited undergraduate programmes including higher certificates, diplomas, and degrees.
+            Whether you are interested in business, information technology, or further studies, we provide
+            the support needed to succeed academically and professionally.
+        </p>
+
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="grid-2">
+
+        <div class="card">
+            <h2>Mission</h2>
+            <p>
+                To empower young people in South Africa by providing access to digital skills training,
+                education, and mentorship opportunities that promote personal growth and employability.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Vision</h2>
+            <p>
+                To create a digitally empowered generation of young people who are confident, skilled,
+                and ready to thrive in a rapidly evolving technological world.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- IMAGES -->
+    <section class="center-text">
+
+        <img src="images/teaching 4.jpg" alt="teaching" class="responsive-img">
+
+        <p>
+            Our organisation reflects the importance of digital education in today’s world.
+            We provide young people with the skills needed for employment, innovation, and future growth.
+        </p>
+
+        <img src="images/teaching 2.jpg" alt="teaching" class="responsive-img">
+
+        <p>
+            Our programmes are delivered by experienced professionals who mentor students,
+            ensuring they gain both technical knowledge and confidence.
+        </p>
+
+    </section>
+
+    <!-- TEAM -->
+    <section class="center-text">
+
+        <h2>Meet Our Team</h2>
+
+        <div class="card">
+
+            <h3>Durban Office</h3>
+
+            <p>221 Dr Pixley Kaseme Street</p>
+            <p>Durban Central</p>
+            <p>4000</p>
+            <p>+27 31 234 5678</p>
+            <p>WhatsApp: 078 905 8960</p>
+            <p>Email: ubuntuyouthclub29@yahoo.com</p>
+
+        </div>
+
+        <div class="team-grid">
+
+            <div class="card">
+                <img src="images/logo2.png" alt="advisor">
+                <h4>Student Advisor</h4>
+                <p>Nomzamo Ntuli</p>
+                <p>Call: 031 879 0000</p>
+            </div>
+
+            <div class="card">
+                <img src="images/logo2.png" alt="advisor">
+                <h4>Student Advisor</h4>
+                <p>Chris Smith</p>
+                <p>Call: 031 879 0099</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <img src="images/logo phone.png" alt="logo">
+    <p>call: 031 879 0000</p>
+
+    <img src="images/logo mail.png" alt="logo">
+    <p>email: ubuntuyouthclub29@yahoo.com</p>
+
+    <p class="details">all rights reserved for ubuntu youth club &copy;</p>
+</footer>
+
+<!-- HEADER SCROLL EFFECT -->
+<script>
+window.addEventListener("scroll", function(){
+    const header = document.querySelector(".site-header");
+
+    if(window.scrollY > 50){
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+</script>
+
+</body>
+</html>

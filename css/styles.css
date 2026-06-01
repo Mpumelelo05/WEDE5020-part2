@@ -1,0 +1,320 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   ROOT VARIABLES
+=========================== */
+:root{
+    --primary:#006b43;
+    --primary-dark:#004d30;
+    --secondary:#003366;
+
+    --white:#ffffff;
+    --light-gray:#f5f7fa;
+    --soft-gray:#e9ecef;
+    --charcoal:#1f2937;
+    --footer-gray:#003366;
+
+    --gradient:linear-gradient(135deg,#006b43,#003366);
+
+    --shadow:0 10px 30px rgba(0,0,0,.12);
+    --soft-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    --radius:16px;
+    --transition:.3s ease;
+}
+
+/* ===========================
+   RESET
+=========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--light-gray);
+    color:var(--charcoal);
+    line-height:1.7;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+}
+
+/* ===========================
+   CENTER NON-INDEX PAGE CONTENT
+=========================== */
+body:not(.index) main.container {
+    max-width: 900px;
+    margin: 100px auto 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+body:not(.index) main.container img,
+body:not(.index) main.container h1,
+body:not(.index) main.container h2,
+body:not(.index) main.container p {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+/* ===========================
+   MODERN GLOBAL HEADER
+=========================== */
+.site-header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(0,51,102,0.15);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,0.15);
+    transition:all .4s ease;
+}
+
+.site-header.scrolled{
+    background:rgba(0,51,102,.95);
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.header-container{
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 5%;
+}
+
+/* ===========================
+   LOGO AREA
+=========================== */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:65px;
+    transition:.4s;
+}
+
+.logo img:hover{
+    transform:rotate(-8deg) scale(1.05);
+}
+
+.logo-text h1,
+.logo-text h2{
+    color:white;
+    font-size:1.7rem;
+    font-weight:700;
+    letter-spacing:1px;
+    margin:0;
+}
+
+.logo-text .subtitle{
+    color:white;
+    opacity:.95;
+    text-shadow:0 3px 10px rgba(0,0,0,.7);
+    font-size:.9rem;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+.main-nav{
+    margin-left:auto;
+}
+
+.main-nav ul{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    list-style:none;
+}
+
+.main-nav ul li{
+    background:none;
+    padding:0;
+    box-shadow:none;
+}
+
+.main-nav ul li a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:50px;
+    font-size:.95rem;
+    font-weight:500;
+    position:relative;
+    transition:all .35s ease;
+}
+
+.main-nav ul li a:hover{
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+    color:#ffffff;
+    transform:translateY(-2px);
+}
+
+.main-nav ul li a.active{
+    background:#006b43;
+    color:white;
+    box-shadow:0 8px 20px rgba(0,107,67,.35);
+}
+
+.main-nav ul li a::after{
+    content:"";
+    position:absolute;
+    bottom:8px;
+    left:50%;
+    width:0;
+    height:2px;
+    background:#ff9800;
+    transform:translateX(-50%);
+    transition:.3s ease;
+}
+
+.main-nav ul li a:hover::after{
+    width:50%;
+}
+
+/* ===========================
+   MOBILE MENU
+=========================== */
+@media(max-width:900px){
+    .header-container{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .main-nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .main-nav ul li a{
+        padding:10px 15px;
+        font-size:.9rem;
+    }
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    animation:zoomHero 12s infinite alternate ease-in-out;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:8%;
+    transform:translateY(-50%);
+    color:white;
+    z-index:10;
+    max-width:700px;
+}
+
+.hero-content h1{
+    font-size:clamp(3rem,7vw,6rem);
+    line-height:1.1;
+    margin-bottom:20px;
+    text-shadow:0 5px 20px rgba(0,0,0,.5);
+}
+
+.hero-content p{
+    font-size:1.3rem;
+    margin-bottom:30px;
+}
+
+.hero-btn{
+    display:inline-block;
+    background:var(--primary);
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:var(--primary-dark);
+    transform:translateY(-4px);
+}
+
+
+
+/* =========================== INTRO SECTION =========================== */
+ .intro{ background:white; padding:100px 10%; } .intro h2{ color:var(--primary); font-size:3rem; margin-bottom:25px; } .intro p{ max-width:900px; font-size:1.15rem; }
+ 
+ /* =========================== PROGRAMMES =========================== */
+  .programmes{ padding:100px 8%; background:#f3f6f8; } .programmes h2{ text-align:center; color:var(--primary); margin-bottom:60px; font-size:3rem; } .programme-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; } .card{ background:white; border-radius:20px; padding:30px; box-shadow:var(--shadow); transition:.4s; } .card:hover{ transform:translateY(-10px); } .card h3{ color:var(--primary); margin-bottom:15px; } 
+ 
+ /* =========================== CTA =========================== */ 
+ .cta{ background:var(--gradient); color:white; text-align:center; padding:100px 10%; } .cta h2{ font-size:3rem; margin-bottom:20px; } .cta p{ max-width:700px; margin:auto auto 30px; } 
+ 
+ /* =========================== COURSE CARDS =========================== */ 
+ .course-options{ display:flex; flex-wrap:wrap; justify-content:center; gap:25px; margin:40px auto; } .course-card{ background:white; width:280px; padding:25px; text-align:center; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,.08); transition:.3s; } .course-card:hover{ transform:translateY(-10px); } .course-card h3{ color:var(--primary); margin-bottom:15px; } 
+ 
+ /* =========================== GRID LAYOUTS =========================== */
+  .grid-2{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px; margin:40px auto; } .team-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; } 
+  
+  /* =========================== TABLES =========================== */
+   table{ width:100%; border-collapse:collapse; background:white; margin:20px 0 40px; border-radius:var(--radius); overflow:hidden; box-shadow:var(--soft-shadow); } thead{ background:var(--gradient); color:white; } th, td{ padding:14px; text-align:left; } tbody tr{ transition:.3s; } tbody tr:hover{ background:#f7f9fb; }
+   
+   /* =========================== QUICK LINKS =========================== */ 
+   ul{ list-style:none; } .quick-links{ display:flex; flex-wrap:wrap; gap:10px; } .quick-links li{ background:white; padding:10px 15px; border-radius:10px; box-shadow:var(--soft-shadow); }
+
+/* ===========================
+   OTHER STYLINGS KEPT AS-IS
+=========================== */
+/* ... (rest of your existing CSS like .intro, .programmes, .course-card, tables, footer etc.) ... */
+
+/* =========================== FOOTER =========================== */ 
+footer{ background:var(--footer-gray); color:white; text-align:center; padding:50px 20px; } footer img{ width:30px; margin:5px; } footer p{ color:white; } footer::after{ content:"© Ubuntu Youth Club | All Rights Reserved"; display:block; margin-top:15px; opacity:.8; }
+/* ===========================
+   ANIMATIONS
+=========================== */
+@keyframes zoomHero{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.08);
+    }
+}

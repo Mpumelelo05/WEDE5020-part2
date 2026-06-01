@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Youth Club</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<script>
+window.addEventListener("scroll", function(){
+
+    const header =
+    document.querySelector(".site-header");
+
+    if(window.scrollY > 50){
+        header.classList.add("scrolled");
+    }
+    else{
+        header.classList.remove("scrolled");
+    }
+
+});
+</script>
+
+<body>
+
+    <header class="site-header">
+    <div class="header-container">
+        <div class="logo-center">
+            <img src="images/icons8-graduation-cap-100.png" alt="Ubuntu Youth Club Logo">
+            <div class="logo-text">
+                <h1>UBUNTU YOUTH CLUB</h1>
+                <p class="subtitle">Access At Your Comfort</p>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programmes.html">Programmes</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <img src="images/computer room.jpg" alt="Students Learning">
+        <div class="hero-content">
+            <h1>Connect With <br>Ubuntu Youth Club Today</h1>
+            <p>Learn technology, build skills, and prepare for your future career.</p>
+            <a href="about.html" class="hero-btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- INTRO SECTION -->
+    <section class="intro">
+        <h2>How Can We Help?</h2>
+        <p>
+            At Ubuntu Youth Club, every learner matters. We provide affordable technology education,
+            mentorship, and career guidance to help you achieve your goals.
+        </p>
+    </section>
+
+    <!-- PROGRAMMES SECTION -->
+    <section class="programmes">
+        <h2>Our Programmes</h2>
+        <div class="programme-grid">
+
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, JavaScript, and modern frameworks.</p>
+            </div>
+
+            <div class="card">
+                <h3>Mobile App Development</h3>
+                <p>Build Android and iOS applications with hands-on projects.</p>
+            </div>
+
+            <div class="card">
+                <h3>Data Science & Analytics</h3>
+                <p>Analyze data and generate business insights for real-world impact.</p>
+            </div>
+
+            <div class="card">
+                <h3>AI & Machine Learning</h3>
+                <p>Explore AI concepts, neural networks, and ML algorithms.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cybersecurity Fundamentals</h3>
+                <p>Protect systems and networks from digital threats.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cloud Computing</h3>
+                <p>Learn AWS, Azure, and cloud infrastructure management.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+        <h2>Start Your Learning Journey</h2>
+        <p>Join Ubuntu Youth Club and become part of a growing community of innovators.</p>
+        <a href="contact.html" class="hero-btn">Apply Now</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <img src="images/logo phone.png" alt="Phone Icon">
+            <p>031 879 0000</p>
+        </div>
+        <div>
+            <img src="images/logo mail.png" alt="Email Icon">
+            <p>ubuntuyouthclub29@yahoo.com</p>
+        </div>
+        <p>© Ubuntu Youth Club. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
