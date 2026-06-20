@@ -3,39 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubuntu Youth Club</title>
+    <title>Ubuntu Youth Club | Home</title>
+    <meta name="description" content="Ubuntu Youth Club is a non-profit organisation bridging the digital skills gap for young people through accredited technology and business programmes.">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
-
-<script>
-window.addEventListener("scroll", function(){
-
-    const header =
-    document.querySelector(".site-header");
-
-    if(window.scrollY > 50){
-        header.classList.add("scrolled");
-    }
-    else{
-        header.classList.remove("scrolled");
-    }
-
-});
-</script>
-
 <body>
 
-    <header class="site-header">
+<!-- HEADER -->
+<header class="site-header">
     <div class="header-container">
-        <div class="logo-center">
-            <img src="images/icons8-graduation-cap-100.png" alt="Ubuntu Youth Club Logo">
+
+        <div class="logo">
+            <img src="images/icons8-graduation-cap-100.png" alt="Ubuntu Youth Club logo">
             <div class="logo-text">
                 <h1>UBUNTU YOUTH CLUB</h1>
                 <p class="subtitle">Access At Your Comfort</p>
             </div>
         </div>
 
-        <nav class="main-nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -44,22 +34,48 @@ window.addEventListener("scroll", function(){
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
     </div>
 </header>
 
-    <!-- HERO SECTION -->
+<main>
+
+    <!-- HERO CAROUSEL -->
     <section class="hero">
+        <div class="carousel" data-autoplay="5500">
+            <div class="carousel-track">
+
+                <div class="carousel-slide">
+                    <img src="images/computer room.jpg" alt="Students learning together in the Ubuntu Youth Club computer room">
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="images/tech 1.jpg" alt="Student practising web development skills">
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="images/cybersecurity.jpg" alt="Student exploring cybersecurity fundamentals">
+                </div>
+
+            </div>
+
+            <button class="carousel-btn prev" aria-label="Previous slide">&#10094;</button>
+            <button class="carousel-btn next" aria-label="Next slide">&#10095;</button>
+            <div class="carousel-dots"></div>
+        </div>
+
         <div class="hero-overlay"></div>
-        <img src="images/computer room.jpg" alt="Students Learning">
+
         <div class="hero-content">
-            <h1>Connect With <br>Ubuntu Youth Club Today</h1>
+            <h1>Connect With<br>Ubuntu Youth Club Today</h1>
             <p>Learn technology, build skills, and prepare for your future career.</p>
             <a href="about.html" class="hero-btn">Learn More</a>
         </div>
     </section>
 
-    <!-- INTRO SECTION -->
+    <!-- INTRO -->
     <section class="intro">
+        <span class="eyebrow">Who We Are</span>
         <h2>How Can We Help?</h2>
         <p>
             At Ubuntu Youth Club, every learner matters. We provide affordable technology education,
@@ -67,48 +83,52 @@ window.addEventListener("scroll", function(){
         </p>
     </section>
 
-    <!-- PROGRAMMES SECTION -->
+    <!-- PROGRAMMES -->
     <section class="programmes">
-        <h2>Our Programmes</h2>
+        <div class="center-text">
+            <span class="eyebrow">Accredited Pathways</span>
+            <h2>Our Programmes</h2>
+        </div>
+
         <div class="programme-grid">
 
             <div class="card">
-                <img src="images/tech 1.jpg" alt="web development" class="responsive-img">
+                <img src="images/tech 1.jpg" alt="Web development student coding on a laptop" class="responsive-img">
                 <h3>Web Development</h3>
                 <p>Learn HTML, CSS, JavaScript, and modern frameworks.</p>
                 <a href="programmes.html" class="hero-btn">Apply</a>
             </div>
 
             <div class="card">
-                <img src="images/tech 2.jpg" alt="mobile app development" class="responsive-img">
+                <img src="images/tech 2.jpg" alt="Mobile app development student testing an app" class="responsive-img">
                 <h3>Mobile App Development</h3>
                 <p>Build Android and iOS applications with hands-on projects.</p>
                 <a href="programmes.html" class="hero-btn">Apply</a>
             </div>
 
             <div class="card">
-                <img src="images/tech 3.jpg" alt="data science" class="responsive-img">
-                <h3>Data Science & Analytics</h3>
-                <p>Analyze data and generate business insights for real-world impact.</p>
+                <img src="images/tech 3.jpg" alt="Data science student reviewing analytics dashboards" class="responsive-img">
+                <h3>Data Science &amp; Analytics</h3>
+                <p>Analyse data and generate business insights for real-world impact.</p>
                 <a href="programmes.html" class="hero-btn">Apply</a>
             </div>
 
             <div class="card">
-                <img src="images/tech 4.jpg" alt="ai and machine learning" class="responsive-img">
-                <h3>AI & Machine Learning</h3>
+                <img src="images/tech 4.jpg" alt="Student exploring AI and machine learning concepts" class="responsive-img">
+                <h3>AI &amp; Machine Learning</h3>
                 <p>Explore AI concepts, neural networks, and ML algorithms.</p>
                 <a href="programmes.html" class="hero-btn">Apply</a>
             </div>
 
             <div class="card">
-                <img src="images/cybersecurity.jpg" alt="cybersecurity" class="responsive-img">
+                <img src="images/cybersecurity.jpg" alt="Cybersecurity student monitoring network security" class="responsive-img">
                 <h3>Cybersecurity Fundamentals</h3>
                 <p>Protect systems and networks from digital threats.</p>
                 <a href="programmes.html" class="hero-btn">Apply</a>
             </div>
 
             <div class="card">
-                <img src="images/tech 5.jpg" alt="cloud computing" class="responsive-img">
+                <img src="images/tech 5.jpg" alt="Student managing cloud infrastructure" class="responsive-img">
                 <h3>Cloud Computing</h3>
                 <p>Learn AWS, Azure, and cloud infrastructure management.</p>
                 <a href="programmes.html" class="hero-btn">Apply</a>
@@ -124,18 +144,26 @@ window.addEventListener("scroll", function(){
         <a href="contact.html" class="hero-btn">Apply Now</a>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p class="footer-datetime" id="footerDatetime"></p>
+
+    <div class="footer-grid">
         <div>
-            <img src="images/logo phone.png" alt="Phone Icon">
+            <img src="images/logo phone.png" alt="Phone icon">
             <p>031 879 0000</p>
         </div>
         <div>
-            <img src="images/logo mail.png" alt="Email Icon">
+            <img src="images/logo mail.png" alt="Email icon">
             <p>ubuntuyouthclub29@yahoo.com</p>
         </div>
-        <p>© Ubuntu Youth Club. All Rights Reserved.</p>
-    </footer>
+    </div>
 
+    <p class="details">All rights reserved for Ubuntu Youth Club &copy;</p>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

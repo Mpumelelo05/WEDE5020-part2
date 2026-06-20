@@ -1,89 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-
+    <title>Programmes | Ubuntu Youth Club</title>
+    <meta name="description" content="Explore accredited undergraduate, postgraduate, and short learning programmes offered by Ubuntu Youth Club.">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
-
 <body>
 
-<!-- MODERN CENTERED HEADER -->
+<!-- HEADER -->
 <header class="site-header">
-
     <div class="header-container">
 
         <div class="logo">
-            <img src="images/icons8-graduation-cap-100.png" alt="logo">
-
+            <img src="images/icons8-graduation-cap-100.png" alt="Ubuntu Youth Club logo">
             <div class="logo-text">
                 <h1>UBUNTU YOUTH CLUB</h1>
                 <p class="subtitle">Access At Your Comfort</p>
             </div>
         </div>
 
-        <nav class="main-nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="programmes.html" class="active">Programmes</a></li>
                 <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
     </div>
 </header>
 
-<!-- MAIN CONTENT -->
 <main class="container">
 
-    <!-- HERO SECTION -->
+    <!-- HERO CAROUSEL -->
     <section class="center-text">
+        <span class="eyebrow">Accredited Programmes</span>
+        <h1>Study With Us</h1>
 
-        <h1>Study with us</h1>
-        
+        <div class="carousel content-carousel" data-autoplay="4500">
+            <div class="carousel-track">
+
+                <div class="carousel-slide">
+                    <img src="images/tech 1.jpg" alt="Web Development programme">
+                    <div class="carousel-caption">Web Development</div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="images/tech 2.jpg" alt="Mobile App Development programme">
+                    <div class="carousel-caption">Mobile App Development</div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="images/tech 3.jpg" alt="Data Science and Analytics programme">
+                    <div class="carousel-caption">Data Science &amp; Analytics</div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="images/tech 4.jpg" alt="AI and Machine Learning programme">
+                    <div class="carousel-caption">AI &amp; Machine Learning</div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="images/cybersecurity.jpg" alt="Cybersecurity Fundamentals programme">
+                    <div class="carousel-caption">Cybersecurity Fundamentals</div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="images/tech 5.jpg" alt="Cloud Computing programme">
+                    <div class="carousel-caption">Cloud Computing</div>
+                </div>
+
+            </div>
+
+            <button class="carousel-btn prev" aria-label="Previous slide">&#10094;</button>
+            <button class="carousel-btn next" aria-label="Next slide">&#10095;</button>
+            <div class="carousel-dots"></div>
+            <span class="carousel-counter"></span>
+        </div>
     </section>
 
-    <!-- ARTICLE TITLE -->
+    <!-- INTRO -->
     <section class="center-text">
-
-        <h2>Programmes offered</h2>
-
+        <h2>Programmes Offered</h2>
+        <h3>Making tech learning easy and accessible</h3>
+        <p>
+            Elevate your tech career with our self-paced, accredited programmes. Start your journey with
+            Ubuntu Youth Club and be part of a global community of forward-thinkers.
+        </p>
     </section>
 
-    <!-- BLOG CONTENT -->
-  <h3>Introducing to you a Ubuntu Youth Club, here to make learning tech easy and accessible</h3> </section>  <p>Elevate your Tech career with our self-paced, accredited programmes. Start your journey with The Ubuntu Youth Club and be part of a global community of forward-thinkers.</p> <h3>Undergraduate</h3> <table border="1"> <thead> <tr> <th>Course</th> <th>Duration</th> <th>NQF Level</th> </tr> </thead> <tbody> <tr> <td>Degree</td> <td>3-4 Years</td> <td>7</td> </tr> <tr> <td>Diploma</td> <td>1-3 Years</td> <td>6</td> </tr> <tr> <td>Advanced Diploma</td> <td>1-2 Years</td> <td>7</td> </tr> <tr> <td>Higher Certificate</td> <td>1 Year</td> <td>5</td> </tr> <tr> <td>Advanced Certificate</td> <td>6-12 Months</td> <td>6</td> </tr> <tr> <td>Online Courses</td> <td>Varies</td> <td>Short Learning Program</td> </tr> </tbody> </table> <h3>Postgraduate</h3> <table border="1"> <thead> <tr> <th>Course</th> <th>Duration</th> <th>NQF Level</th> </tr> </thead> <tbody> <tr> <td>Doctorate</td> <td>3-6 Years</td> <td>10</td> </tr> <tr> <td>Masters</td> <td>1-2 Years</td> <td>9</td> </tr> <tr> <td>Honours</td> <td>1 Year</td> <td>8</td> </tr> <tr> <td>Postgraduate Diploma</td> <td>1 Year</td> <td>8</td> </tr> </tbody> </table> <h3>Schools</h3> <table border="1"> <thead> <tr> <th>School</th> <th>Duration</th> <th>NQF Level</th> </tr> </thead> <tbody> <tr> <td>Corporate Training</td> <td>Varies</td> <td>Short Learning Program</td> </tr> <tr> <td>School of Information and Digital Technology</td> <td>Varies</td> <td>5-10</td> </tr> <tr> <td>School of Business</td> <td>Varies</td> <td>5-9</td> </tr> <tr> <td>School of Teaching</td> <td>Varies</td> <td>5-9</td> </tr> </tbody> </table> <h3>Additional Courses</h3> <table border="1"> <thead> <tr> <th>Course</th> <th>Duration</th> <th>NQF Level</th> </tr> </thead> <tbody> <tr> <td>Web Development</td> <td>6-12 Months</td> <td>6</td> </tr> <tr> <td>Mobile App Development</td> <td>6-12 Months</td> <td>6</td> </tr> <tr> <td>Data Science & Analytics</td> <td>1-2 Years</td> <td>7</td> </tr> <tr> <td>AI & Machine Learning</td> <td>1-2 Years</td> <td>8</td> </tr> <tr> <td>Cybersecurity Fundamentals</td> <td>6-12 Months</td> <td>6</td> </tr> <tr> <td>Cloud Computing</td> <td>6-12 Months</td> <td>6</td> </tr> <tr> <td>Digital Marketing</td> <td>6 Months</td> <td>5</td> </tr> <tr> <td>Graphic Design & UX/UI</td> <td>6-12 Months</td> <td>5-6</td> </tr> <tr> <td>Entrepreneurship & Startups</td> <td>3-6 Months</td> <td>5</td> </tr> <tr> <td>Project Management</td> <td>6-12 Months</td> <td>6</td> </tr> </tbody> </table> 
- </main>
+    <!-- UNDERGRADUATE -->
+    <section>
+        <h3>Undergraduate</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Duration</th>
+                        <th>NQF Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Degree</td><td>3-4 Years</td><td>7</td></tr>
+                    <tr><td>Diploma</td><td>1-3 Years</td><td>6</td></tr>
+                    <tr><td>Advanced Diploma</td><td>1-2 Years</td><td>7</td></tr>
+                    <tr><td>Higher Certificate</td><td>1 Year</td><td>5</td></tr>
+                    <tr><td>Advanced Certificate</td><td>6-12 Months</td><td>6</td></tr>
+                    <tr><td>Online Courses</td><td>Varies</td><td>Short Learning Program</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- POSTGRADUATE -->
+    <section>
+        <h3>Postgraduate</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Duration</th>
+                        <th>NQF Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Doctorate</td><td>3-6 Years</td><td>10</td></tr>
+                    <tr><td>Masters</td><td>1-2 Years</td><td>9</td></tr>
+                    <tr><td>Honours</td><td>1 Year</td><td>8</td></tr>
+                    <tr><td>Postgraduate Diploma</td><td>1 Year</td><td>8</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- SCHOOLS -->
+    <section>
+        <h3>Schools</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>School</th>
+                        <th>Duration</th>
+                        <th>NQF Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Corporate Training</td><td>Varies</td><td>Short Learning Program</td></tr>
+                    <tr><td>School of Information and Digital Technology</td><td>Varies</td><td>5-10</td></tr>
+                    <tr><td>School of Business</td><td>Varies</td><td>5-9</td></tr>
+                    <tr><td>School of Teaching</td><td>Varies</td><td>5-9</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ADDITIONAL COURSES -->
+    <section>
+        <h3>Additional Courses</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Duration</th>
+                        <th>NQF Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Web Development</td><td>6-12 Months</td><td>6</td></tr>
+                    <tr><td>Mobile App Development</td><td>6-12 Months</td><td>6</td></tr>
+                    <tr><td>Data Science &amp; Analytics</td><td>1-2 Years</td><td>7</td></tr>
+                    <tr><td>AI &amp; Machine Learning</td><td>1-2 Years</td><td>8</td></tr>
+                    <tr><td>Cybersecurity Fundamentals</td><td>6-12 Months</td><td>6</td></tr>
+                    <tr><td>Cloud Computing</td><td>6-12 Months</td><td>6</td></tr>
+                    <tr><td>Digital Marketing</td><td>6 Months</td><td>5</td></tr>
+                    <tr><td>Graphic Design &amp; UX/UI</td><td>6-12 Months</td><td>5-6</td></tr>
+                    <tr><td>Entrepreneurship &amp; Startups</td><td>3-6 Months</td><td>5</td></tr>
+                    <tr><td>Project Management</td><td>6-12 Months</td><td>6</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+        <h2>Ready To Apply?</h2>
+        <p>Speak to a student advisor and find the programme that fits your goals.</p>
+        <a href="contact.html" class="hero-btn">Apply Now</a>
+    </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer>
+    <p class="footer-datetime" id="footerDatetime"></p>
 
-    <img src="images/logo phone.png" alt="logo">
-    <p>call: 031 879 0000</p>
+    <div class="footer-grid">
+        <div>
+            <img src="images/logo phone.png" alt="Phone icon">
+            <p>Call: 031 879 0000</p>
+        </div>
+        <div>
+            <img src="images/logo mail.png" alt="Email icon">
+            <p>Email: ubuntuyouthclub29@yahoo.com</p>
+        </div>
+    </div>
 
-    <img src="images/logo mail.png" alt="logo">
-    <p>email: ubuntuyouthclub29@yahoo.com</p>
-
-    <p class="details">all rights reserved for ubuntu youth club &copy;</p>
-
+    <p class="details">All rights reserved for Ubuntu Youth Club &copy;</p>
 </footer>
 
-<!-- SCROLL HEADER SCRIPT -->
-<script>
-window.addEventListener("scroll", function () {
-    const header = document.querySelector(".site-header");
-
-    if (window.scrollY > 50) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
-});
-</script>
-
+<script src="js/main.js"></script>
 </body>
 </html>

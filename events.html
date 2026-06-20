@@ -1,54 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
-
+    <title>Events | Ubuntu Youth Club</title>
+    <meta name="description" content="Discover Ubuntu Youth Club's networking events, tech workshops, seminars, and industry meetups for young people building careers in technology.">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
-
 <body>
 
-<!-- MODERN CENTERED HEADER -->
+<!-- HEADER -->
 <header class="site-header">
-
     <div class="header-container">
 
         <div class="logo">
-            <img src="images/icons8-graduation-cap-100.png" alt="logo">
-
+            <img src="images/icons8-graduation-cap-100.png" alt="Ubuntu Youth Club logo">
             <div class="logo-text">
                 <h1>UBUNTU YOUTH CLUB</h1>
                 <p class="subtitle">Access At Your Comfort</p>
             </div>
         </div>
 
-        <nav class="main-nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="programmes.html" >Programmes</a></li>
+                <li><a href="programmes.html">Programmes</a></li>
                 <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
     </div>
 </header>
 
-<!-- MAIN CONTENT -->
 <main class="container">
 
-    <!-- HERO IMAGE -->
+    <!-- EVENTS CAROUSEL -->
     <section class="center-text">
+        <span class="eyebrow">What's On</span>
+        <h1>Events &amp; Networking</h1>
 
-        <img src="images/networking event.jpg"
-             alt="networking event"
-             class="responsive-img">
+        <div class="carousel content-carousel" data-autoplay="5000">
+            <div class="carousel-track">
 
-        <h1>Events & Networking</h1>
+                <div class="carousel-slide">
+                    <img src="images/networking event.jpg" alt="Students at an Ubuntu Youth Club networking event">
+                    <div class="carousel-caption">Networking Events</div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="images/career networking.jpg" alt="Students meeting recruiters at a career networking session">
+                    <div class="carousel-caption">Career Networking Sessions</div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="images/tech workshops.jpg" alt="Students taking part in a hands-on tech workshop">
+                    <div class="carousel-caption">Tech Workshops</div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="images/student seniar.jpg" alt="Students attending a motivational seminar">
+                    <div class="carousel-caption">Student Seminars</div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="images/industry meetups.jpg" alt="Students meeting industry professionals at a meetup">
+                    <div class="carousel-caption">Industry Meetups</div>
+                </div>
+
+            </div>
+
+            <button class="carousel-btn prev" aria-label="Previous slide">&#10094;</button>
+            <button class="carousel-btn next" aria-label="Next slide">&#10095;</button>
+            <div class="carousel-dots"></div>
+            <span class="carousel-counter"></span>
+        </div>
 
         <p>
             We host regular networking events that create valuable opportunities for students to engage with
@@ -68,65 +99,44 @@
             Beyond the workplace, these connections help students grow in confidence, broaden their perspective,
             and develop social skills that positively influence their everyday lives and future aspirations.
         </p>
-
     </section>
 
-    <!-- EVENTS HIGHLIGHTS -->
+    <!-- EVENT HIGHLIGHTS -->
     <section class="grid-2">
 
         <div class="card">
-            <img src="images/career networking.jpg" alt="Career Networking Session" class="responsive-img">
+            <img src="images/career networking.jpg" alt="Career networking session" class="responsive-img">
             <h2>Career Networking Sessions</h2>
-            <p>
-                Meet industry leaders, recruiters, and mentors who guide students toward real career opportunities.
-            </p>
+            <p>Meet industry leaders, recruiters, and mentors who guide students toward real career opportunities.</p>
         </div>
 
         <div class="card">
-            <img src="images/tech workshops.jpg" alt="tech workshop" class="responsive-img">
+            <img src="images/tech workshops.jpg" alt="Tech workshop" class="responsive-img">
             <h2>Tech Workshops</h2>
-            <p>
-                Hands-on workshops in coding, design, and digital skills to prepare students for the modern workplace.
-            </p>
+            <p>Hands-on workshops in coding, design, and digital skills to prepare students for the modern workplace.</p>
         </div>
 
         <div class="card">
-            <img src="images/student seniar.jpg" alt="Student Seminars" class="responsive-img">
+            <img src="images/student seniar.jpg" alt="Student seminar" class="responsive-img">
             <h2>Student Seminars</h2>
-            <p>
-                Educational talks and motivational sessions focused on personal development and academic success.
-            </p>
+            <p>Educational talks and motivational sessions focused on personal development and academic success.</p>
         </div>
 
         <div class="card">
-            <img src="images/industry meetups.jpg" alt="industry meetup" class="responsive-img">
+            <img src="images/industry meetups.jpg" alt="Industry meetup" class="responsive-img">
             <h2>Industry Meetups</h2>
-            <p>
-                Real-world exposure through meetups with companies, entrepreneurs, and professionals.
-            </p>
+            <p>Real-world exposure through meetups with companies, entrepreneurs, and professionals.</p>
         </div>
 
     </section>
 
-      <!-- HERO SECTION -->
+    <!-- BLOG -->
     <section class="center-text">
-
-        <h1>Programme & Campus Blog</h1>
-
-        <img src="images/library.jpg"
-             alt="library"
-             class="responsive-img">
-
-    </section>
-
-    <!-- ARTICLE TITLE -->
-    <section class="center-text">
-
+        <span class="eyebrow">Programme &amp; Campus Blog</span>
+        <img src="images/library.jpg" alt="Ubuntu Youth Club library" class="responsive-img">
         <h2>UBYC Library Brews Up Student Comfort</h2>
-
     </section>
 
-    <!-- BLOG CONTENT -->
     <section class="grid-2">
 
         <div class="card">
@@ -140,7 +150,7 @@
         <div class="card">
             <p>
                 The initiative aims to improve access to basic amenities in library spaces and support a more
-                effective study environment. This forms part of UBYC’s strategy to transform libraries into
+                effective study environment. This forms part of UBYC's strategy to transform libraries into
                 modern social learning spaces.
             </p>
         </div>
@@ -175,42 +185,31 @@
 
     </section>
 
-    <!-- AUTHORS -->
     <section class="center-text card">
-
         <p><strong>Words:</strong> Nkosazana Manzi</p>
         <p><strong>Photographs:</strong> Sethu Dlamini</p>
-
     </section>
-
 
 </main>
 
 <!-- FOOTER -->
 <footer>
+    <p class="footer-datetime" id="footerDatetime"></p>
 
-    <img src="images/logo phone.png" alt="logo">
-    <p>call: 031 879 0000</p>
+    <div class="footer-grid">
+        <div>
+            <img src="images/logo phone.png" alt="Phone icon">
+            <p>Call: 031 879 0000</p>
+        </div>
+        <div>
+            <img src="images/logo mail.png" alt="Email icon">
+            <p>Email: ubuntuyouthclub29@yahoo.com</p>
+        </div>
+    </div>
 
-    <img src="images/logo mail.png" alt="logo">
-    <p>email: ubuntuyouthclub29@yahoo.com</p>
-
-    <p class="details">all rights reserved for ubuntu youth club &copy;</p>
-
+    <p class="details">All rights reserved for Ubuntu Youth Club &copy;</p>
 </footer>
 
-<!-- SCROLL EFFECT -->
-<script>
-window.addEventListener("scroll", function(){
-    const header = document.querySelector(".site-header");
-
-    if(window.scrollY > 50){
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
-});
-</script>
-
+<script src="js/main.js"></script>
 </body>
 </html>
